@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "init": "node ./src/init.js",
+    "pack": "node ./src/pack.js",
+    "unpack": "node ./src/unpack.js",
+    "clear-s": "node ./src/clear.js source",
+    "clear-t": "node ./src/clear.js target"
+  },
+  "devDependencies": {
+    "compressing": "^1.8.0",
+    "fs": "^0.0.1-security",
+    "readline": "^1.3.0"
+  }
+}
