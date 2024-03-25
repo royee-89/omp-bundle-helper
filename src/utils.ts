@@ -35,9 +35,13 @@ function buildDir() {
     try {
         fs.mkdirSync(source)
         Log.success(source + '目录创建成功')
+    } catch (err) {
+        // Log.warning(err)
+    }
+    try {
         fs.mkdirSync(target)
         Log.success(target + '目录创建成功')
-    } catch (err) {
+    } catch(err) {
         // Log.warning(err)
     }
 }
@@ -46,7 +50,7 @@ function buildDir() {
  * @description 解压缩包
  * @param String filename 
  */
-async function unpack(filename, callback) {
+async function unpack(filename: string, callback: ()=>{}):Promise<any> {
     const realname = filename.replace(/.tar.gz/g, '')
     if(fs.existsSync(source + realname)) {
         removeDir(source + realname)

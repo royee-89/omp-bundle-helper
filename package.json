@@ -2,13 +2,20 @@
   "scripts": {
     "init": "node ./src/init.js",
     "pack": "node ./src/pack.js",
+    "unpackt": "ts-node ./src/unpack.ts",
     "unpack": "node ./src/unpack.js",
     "clear-s": "node ./src/clear.js source",
     "clear-t": "node ./src/clear.js target"
   },
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "compressing": "^1.8.0",
+    "crypto-js": "^4.1.1",
     "fs": "^0.0.1-security",
-    "readline": "^1.3.0"
+    "readline": "^1.3.0",
+    "shelljs": "^0.8.5"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }

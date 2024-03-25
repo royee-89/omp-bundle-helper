@@ -22,7 +22,8 @@ const ignoreList = [
     'src', 
     'build',
     'sources',
-    'targets'
+    'targets',
+    '.git'
 ]
 // 报错类型
 const type = {
